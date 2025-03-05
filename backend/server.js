@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 // Create a connection to the MySQL database
 const mysqlConfig = {
-  host: process.env.DB_HOST || "database",
+  host: process.env.DB_HOST || "database-service",
   port: process.env.DB_PORT || "3306",
   user: process.env.DB_USER || "user",
   password: process.env.DB_PASSWORD || "password",
