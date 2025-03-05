@@ -2,7 +2,7 @@ import "./App.css";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 
-const URL = "http://18.116.39.73:3000";
+const URL = process.env.REACT_APP_API_URL || "http://backend-service.default.svc.cluster.local:3000";
 function App() {
   const [data, setData] = useState([]);
   const [inputValue, setInputValue] = useState("");
