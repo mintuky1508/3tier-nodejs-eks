@@ -2,7 +2,7 @@ import "./App.css";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 
-const URL = process.env.REACT_APP_API_URL || "http://98.81.192.204:3000";
+const URL = process.env.REACT_APP_API_URL || "http://44.202.92.65:3000";
 function App() {
   const [data, setData] = useState([]);
   const [inputValue, setInputValue] = useState("");
